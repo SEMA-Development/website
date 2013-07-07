@@ -21,14 +21,14 @@ html lang="en"
             span.icon-bar
             span.icon-bar
             span.icon-bar
-          a.brand href="#"
+          a.brand href="#{root_url}"
             img src="http://semadevelopment.com/img/logo-a37d932f.png" alt="SEMADevelopment"
           .container.nav-collapse
             ul.nav.pull-right
-              li= link_to "Volunteer", "/path1"
-              li= link_to "Give", "/path2"
-              li= link_to "Apps", "/path3"
-              li= link_to "Contact", "/path3"
+              li= link_to "Volunteer", page_path('volunteer')
+              li= link_to "Give", page_path('give')
+              li= link_to "Apps", page_path('apps')
+              li= link_to "Contact", page_path('contact')
 
     .container
 

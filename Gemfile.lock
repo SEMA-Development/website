@@ -71,6 +71,7 @@ GEM
       rubyzip
     heroku-api (0.3.13)
       excon (~> 0.25.0)
+    high_voltage (1.2.3)
     hike (1.2.3)
     i18n (0.6.4)
     jbuilder (1.4.2)
@@ -201,6 +202,7 @@ DEPENDENCIES
   foreman
   forgery
   heroku
+  high_voltage
   jbuilder (~> 1.2)
   jquery-rails
   launchy
