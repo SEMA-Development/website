@@ -12,6 +12,8 @@ html lang="en"
 
     = stylesheet_link_tag "application", :media => "all"
     = javascript_include_tag "application"
+    link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"
+    link rel="icon" href="/favicon.ico" type="image/x-icon"
 
   body
     .navbar.navbar-fixed-top
@@ -22,7 +24,7 @@ html lang="en"
             span.icon-bar
             span.icon-bar
           a.brand href="#{root_url}"
-            img src="http://semadevelopment.com/img/logo-a37d932f.png" alt="SEMADevelopment"
+            =image_tag "logo.png", alt: 'SEMADevelopment'
           .container.nav-collapse
             ul.nav.pull-right
               li= link_to "Volunteer", page_path('volunteer')
