@@ -4,16 +4,16 @@ section
         a.thumbnail href="#"
           iframe src="http://player.vimeo.com/video/71900075" width="560" height="432" frameborder="0" webkitAllowFullScreen="" mozallowfullscreen="" allowFullScreen=""
       li.span3
-        a.thumbnail href="#"
-         = image_tag 'top-left-box.png'
+        a.thumbnail href="#{page_path 'about'}"
+          = image_tag 'about.jpg'
       li.span3
-        a.thumbnail href="#"
-         = image_tag 'top-right-box.png'
+        a.thumbnail href="#{page_path 'meet'}"
+          = image_tag 'meet.jpg'
       li.span3
-        a.thumbnail href="#"
-         = image_tag 'bottom-left-box.png'
+        a.thumbnail href="#{page_path 'discover'}"
+          = image_tag 'discover.jpg'
       li.span3
-        a.thumbnail href="#"
-          img data-src="holder.js/300x200" alt="Who we are"
+        a.thumbnail href="#{page_path 'build'}"
+          = image_tag 'build.jpg'
 section
   == render 'shared/mailchimp'
