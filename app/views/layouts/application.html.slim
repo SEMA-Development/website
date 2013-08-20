@@ -28,7 +28,7 @@ html lang="en"
           .container.nav-collapse
             ul.nav.pull-right
               li= link_to "Volunteer", page_path('volunteer')
-              li= link_to "Give", page_path('give')
+              li= link_to "Give", new_donation_path
               li= link_to "Apps", page_path('apps')
               li= link_to "Contact", page_path('contact')
 
@@ -36,6 +36,6 @@ html lang="en"
 
       .content
          = yield
-    
+ 
   footer
     = render "shared/footer"

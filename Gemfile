@@ -11,6 +11,7 @@ gem 'pg'
 gem 'rails', '4.0.0'
 gem 'rails_12factor'
 gem 'sass-rails', '~> 4.0.0'
+gem 'stripe', github: 'stripe/stripe-ruby'
 gem 'slim-rails'
 gem 'turbolinks'
 gem 'uglifier', '>= 1.3.0'
@@ -20,6 +21,7 @@ group :doc do
   gem 'sdoc', require: false
 end
 group :test, :development do
+  gem 'dotenv'
   gem 'rspec-rails'
   gem 'factory_girl_rails'
   gem 'forgery'

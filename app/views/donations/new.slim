@@ -2,11 +2,16 @@ p
   | Your support empowers SEMADevelopment to ignite social good in the mobile world. By creating mobile apps for social good SEMADevelopment establishes innovative fundraising sources for qualified 501(c)(3) organizations, connects aspiring students and amateur developers to the professional community, and promotes a culture of social responsibility in the mobile app development industry.
 p
   | To donate online via credit card, please complete the form below.
+= form_tag donations_path
+  article
+    label for="amount" Amount:
+    = text_field_tag :amount, '10.00'
+    label for="email" Email:
+    = text_field_tag :email
+  script src="https://checkout.stripe.com/v2/checkout.js" class="stripe-button" data-key="#{Rails.configuration.stripe[:publishable_key]}"
 p
   | To donate via check, please mail your check payable to "SEMADevelopment, Inc." to:
 blockquote
   | 620 Peachtree Street NE APT 611
   br
   | Atlanta, GA 30308
-//--Insert Image of Donation levels-->
-//--Insert pulgin for stripe.com-->
