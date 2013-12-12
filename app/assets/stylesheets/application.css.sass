@@ -3,14 +3,19 @@
  *= require_tree .
  */
 
-$navbarBackground: #66A1D2
-$navbarLinkColorHover: #FFCD40
-$navbarBackgroundHighlight: #66A1D2
-$navbarCollapseWidth: 700px
-$navbarHeight: 50px
-$navbarLinkColor: white
+$navbar-default-bg: #66A1D2
+$navbar-default-link-hover-color: #FFCD40
+$navbar-default-link-color: white
 
 @import "bootstrap"
+@import "font-awesome"
+
+.largeIcon
+  font-size: 50px
+  padding-left: 10px
+  padding-right: 10px
+
+
 html, body
   height: 100%
 body
@@ -26,7 +31,6 @@ body
 footer
   text-align: center
   text-color: white
-  background-color: $navbarBackground
   height: 200px
   width: 100%
   #social
