@@ -3,6 +3,7 @@ ruby '2.0.0'
 
 gem 'bootstrap-sass'
 gem 'coffee-rails', '~> 4.0.0'
+gem 'font-awesome-rails'
 gem 'foreman'
 gem 'high_voltage'
 gem 'jbuilder'
@@ -28,9 +29,7 @@ group :test, :development do
   gem 'zonebie'
 end
 group :test do
-  gem 'capybara'
   gem 'launchy'
   gem 'database_cleaner'
-  gem 'capybara-webkit'
   gem 'simplecov'
 end

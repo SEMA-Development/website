@@ -16,21 +16,22 @@ html lang="en"
     link rel="icon" href="/favicon.ico" type="image/x-icon"
 
   body
-    .navbar.navbar-fixed-top
-      .navbar-inner
-        .container
-          a.btn.btn-navbar data-target=".nav-collapse" data-toggle="collapse"
+    .navbar.navbar-default.navbar-fixed-top
+      .container
+        .navbar-header
+          button.navbar-toggle data-toggle="collapse" data-taget=".navbar-collapse" type="button"
             span.icon-bar
             span.icon-bar
             span.icon-bar
-          a.brand href="#{root_url}"
-            =image_tag "logo.png", alt: 'SEMADevelopment'
-          .container.nav-collapse
-            ul.nav.pull-right
-              li= link_to "Volunteer", page_path('volunteer')
-              li= link_to "Donate", new_donation_path
-              li= link_to "Apps", page_path('apps')
-              li= link_to "Contact", page_path('contact')
+          a.navbar-brand href="#{root_url}" =image_tag "logo.png"
+        .navbar-collapse.collapse
+          ul.nav.navbar-nav
+            li= link_to "Apps", page_path('apps')
+            li= link_to "Events", page_path('events')
+            li= link_to "Donate", page_path('donate')
+            li= link_to "News", page_path('news')
+            li= link_to "Contact", page_path('contact')
+            li= link_to "Forum", page_path('forum')
 
     .container
 
