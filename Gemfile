@@ -1,11 +1,11 @@
 source 'https://rubygems.org'
 ruby '2.0.0'
 
-gem 'bootstrap-sass', '~> 2.0.4.0'
+gem 'bootstrap-sass'
 gem 'coffee-rails', '~> 4.0.0'
 gem 'foreman'
 gem 'high_voltage'
-gem 'jbuilder', '~> 1.2'
+gem 'jbuilder'
 gem 'jquery-rails'
 gem 'pg'
 gem 'rails', '4.0.0'
