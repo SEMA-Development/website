@@ -1,19 +1,37 @@
-section
-    ul.thumbnails
-      li.span6
-        a.thumbnail href="#"
-          iframe src="http://player.vimeo.com/video/71900075" width="560" height="432" frameborder="0" webkitAllowFullScreen="" mozallowfullscreen="" allowFullScreen=""
-      li.span3
-        a.thumbnail href="#{page_path 'about'}"
-          = image_tag 'about.jpg'
-      li.span3
-        a.thumbnail href="#{page_path 'meet'}"
-          = image_tag 'meet.jpg'
-      li.span3
-        a.thumbnail href="#{page_path 'discover'}"
-          = image_tag 'discover.jpg'
-      li.span3
-        a.thumbnail href="#{page_path 'build'}"
-          = image_tag 'build.jpg'
-section
-  == render 'shared/mailchimp'
+.container
+
+    
+    .row
+        .col-md-6
+            iframe src="http://player.vimeo.com/video/71900075" width="560" height="432" frameborder="0" webkitAllowFullScreen="" mozallowfullscreen="" allowFullScreen=""
+        .col-md-6
+            h1 Ignite Social Good in the Mobile World
+            h3 SEMADevelopment is a registered Georgia Non-Profit established in 2013 with a mission to connect, empower and educate student
+               and volunteer developers to create entertaining mobile apps and marketed to raise funds for partnering charities in Atlanta and
+               good causes around the world.
+               
+   
+    .row
+        .col-md-6
+            h3 Volunteer to help beter the mobile marketplace. By contributing to a SEMADevelopment project you help students and charities
+            compete in the 21st Century. Connect to the SEMADevelopment forum or register for our next event and start helping today! 
+        .col-md-6
+            = image_tag 'dvd3.jpg', width:'100%'
+            
+           
+    .row
+        .col-md-6
+            = image_tag 'dvd1.jpg',width:'100%'
+        .col-md-6
+            h3 Level up your skills through project-based learning. Lead an open-source SEMADevelopment project alongside proffesionals
+            in the industry. Check out what our students are creating today!
+            
+           
+    .row
+        .col-md-6
+            h3 Empower social good by putting the power of the two billion dollar mobile app industry at the fingertips of the established
+            charities already impacting our community in Atlanta and around the world. Donate now to keep the SEMADevelopment mission alive!
+          
+//commenting out mailchimp         
+//section
+//  == render 'shared/mailchimp'
