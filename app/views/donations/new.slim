@@ -1,12 +1,13 @@
-.container
+.container.headBox
   .row
     .col-md-12
       .jumbotron
-        h3 Thank You
-        p Your support is critical in achieving our mission to ignite social good in the mobile world. Your funding supports our student events and helps to keep our website up to date and operational.
+        h3 Thank You for Supporting Our Mission
+        p Your support is critical to ignite social good in the mobile world. Our mobile apps are created thanks to the kindness and dedication of our students and volunteers. SEMADevelopment is a registered Georgia nonprofit organization and your funding supports our volunteer events and helps to keep our website updated and operational.
 
-h1   
-  | To make a secure online donation via credit card, please complete the form below. (Online Donations powered by stripe.com)
+.container
+h3   
+  | Make a secure electronic donation (powered by stripe.com):
 = form_tag donations_path
   article
     label for="amount" Amount:
@@ -14,9 +15,30 @@ h1
     label for="email" Email:
     = text_field_tag :email
   script src="https://checkout.stripe.com/v2/checkout.js" class="stripe-button" data-key="#{Rails.configuration.stripe[:publishable_key]}"
-p
-  | To donate via check, please mail your check payable to "SEMADevelopment, Inc." to:
+
+.container
+h3
+  | Or mail a check payable to "SEMADevelopment, Inc." to:
 blockquote
   | 620 Peachtree Street NE APT 611
   br
   | Atlanta, GA 30308
+  
+.container
+  .row
+    .col-md-6
+      h3 Thank you to the following individual donors:
+      p Melanie Brown
+      p Carrie Bates
+      p Audrey Anderson
+      p Clark Howell
+      p Jessica Webster
+      p Holly Mays
+      p Green Champion
+      
+    .col-md-6
+      h3 Thank you to our supporters at:
+      .container.logo
+        = image_tag "bnrlogo.jpg"
+      .container.logo
+        = image_tag "alstonandbirdlogo.jpg"
