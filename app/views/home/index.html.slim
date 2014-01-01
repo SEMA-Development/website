@@ -2,11 +2,11 @@
 
     .row id="homeRow1"
         .col-md-5
-            iframe src="http://player.vimeo.com/video/71900075" height="400" width="100%" frameborder="0" webkitAllowFullScreen="" mozallowfullscreen="" allowFullScreen=""
+            iframe src="http://player.vimeo.com/video/83174307" height="400" width="100%" frameborder="0" webkitAllowFullScreen="" mozallowfullscreen="" allowFullScreen=""
         .col-md-1
         .col-md-6
             h2#tagline Ignite Social Good in the Mobile World
-            p We <strong>believe</strong> that our nonprofit community weaves an essential thread into the fabric of our society.
+            p We <strong>believe</strong> that the nonprofit community weaves an essential thread into the fabric of our society.
             p We <strong>understand</strong> that many nonprofits are battling declining revenue and rising demand for their services.
             p We <strong>envision</strong> mobile app development as an innovative tool to raise the funds nonprofits requre.
                
@@ -14,13 +14,14 @@
     .row id="homeRow2"
         .col-md-6
             h3 <strong>Level up</strong> your skills
-            p University students lead open-source SEMADevelopment projects alongside professionals in the industry. Our project-based learning approach enables students to strengthen their skills. After successful completion of a real-world, marketable product students earn course and internship credit. <a href="#">Check out</a> what our students are creating today and which <a href="#">universities</a> participate!  
+            p University students lead open-source SEMADevelopment projects alongside professionals in the industry. Our project-based learning approach enables students to strengthen their skills. After successful completion of a real-world, marketable product students earn course and internship credit. <a href="#{page_path 'apps'}">Check out</a> what our students are creating today and which <a href="#{page_path 'faq'}">universities</a> participate!  
         .col-md-1
         .col-md-5
-            = image_tag 'dvd3.jpg', width:'100%'
-            .contenthover
-                h3 Commnity Driven App Development
-                p Atlanta's community of computer programers, graphic designers, writers, and marketing specialists coming together at the first SEMADevelopment "Developer Volunteer Day." 
+            = image_tag 'dvd3.jpg', width:'100%', id:'d1'
+            //JQuery content hover
+            //.contenthover
+            //  h3 Commnity Driven App Development
+            //  p Atlanta's community of computer programers, graphic designers, writers, and marketing specialists coming together at the first SEMADevelopment "Developer Volunteer Day." 
             
            
     .row id="homeRow3"
@@ -29,15 +30,16 @@
         .col-md-1
         .col-md-6
             h3 <strong>Volunteer</strong> your skills to make the strong, stronger
-            p By Contributing to a SEMADevelopment project, you help top-level university students and successful charities thrive in the 21st Century. Volunteering is easy, just <a href="#">plug-in</a> to the SEMADevelopment forum to answer student questions or <a href='#'>register</a> for our <a href="3">next event</a> to collaborate with students directly.
+            p By Contributing to a SEMADevelopment project, you help top-level university students and successful charities thrive in the 21st Century. Volunteering is easy, just <a href="#{page_path 'forum'}">plug-in</a> to the SEMADevelopment forum to answer student questions or register for our <a href="#{page_path 'events'}">next event</a> to collaborate with students directly.
            
     .row id="homeRow4"
         .col-md-6
             h3 <strong>Empower</strong> social good
-            p Our nonprofit community exists to fight cancer, end human trafficking, feed the hungry, educate children and more. SEMADevelopment exists to provide an innovative fundraising source by leveraging the two billion dollar mobile app industry. Launch a <a href="#">mobile app fundraising campaign</a> today or <a href="#">donate now</a> to keep the SEMADevelopment mission alive!
+            p Our nonprofit community exists to fight cancer, end human trafficking, feed the hungry, educate children and more. SEMADevelopment exists to provide an innovative fundraising source by leveraging the two billion dollar mobile app industry. Launch a <a href="#{page_path 'faq'}">mobile app fundraising campaign</a> today or <a href="#{page_path 'donate'}">donate now</a> to keep the SEMADevelopment mission alive!
         .col-md-1
         .col-md-5
             = image_tag 'hackathon.jpg', width:'100%'
+ 
           
 //commenting out mailchimp         
 //section
