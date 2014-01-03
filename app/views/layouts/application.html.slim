@@ -9,20 +9,19 @@ html lang="en"
     - else
       title SEMADevelopment
     = csrf_meta_tags
-    
-    = stylesheet_link_tag "application", :media => "all"
+    = stylesheet_link_tag "application", media: "all"
     = javascript_include_tag "application"
     link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"
     link rel="icon" href="/favicon.ico" type="image/x-icon"
-    
-    //JQuery Content Hover 
+
+    //JQuery Content Hover
     =javascript_include_tag "conentHover"
     javascript:
       $('#d1').contenthover({
         overlay_background:'#000',
         overlay_opacity:0.8
       });
-    
+
   body
     .navbar.navbar-default.navbar-fixed-top
       .container
@@ -38,9 +37,9 @@ html lang="en"
             li= link_to "Events", page_path('events')
             li= link_to "Donate", page_path('donate')
             li= link_to "Contact", page_path('contact')
-            li= link_to "Blog", page_path('blog')
-            li= link_to "Community", page_path('community')
-            li= link_to "FAQ", page_path('faq') 
+            li= link_to "Blog", blog_path
+            li= link_to "Community", community_path
+            li= link_to "FAQ", page_path('faq')
 
     .container
 
