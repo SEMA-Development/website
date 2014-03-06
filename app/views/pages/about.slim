@@ -1,16 +1,28 @@
-h2 Igniting Social Good in the Mobile World
 
-dl
-  dt Mission:
-  dd To facilitate innovative fundraising for 501(c)(3) organizations by leveraging mobile application development
-  dt Vision:
-  dd To establish innovative fundraising sources for qualified 501(c)(3) organizations, connect aspiring students and amateur developers to the professional community, and promote a culture of social responsibility in the mobile app development industry.
+.container
+    .row id="homeRow2"
+            .col-md-6
+                h3 <strong>Level up</strong> your skills
+                p University students lead open-source SEMADevelopment projects alongside professionals in the industry. Our project-based learning approach enables students to strengthen their skills. After successful completion of a real-world, marketable product students earn course and internship credit. <a href="#{page_path 'apps'}">Check out</a> what our students are creating today and which <a href="#{page_path 'faq'}">universities</a> participate!
+            .col-md-1
+            .col-md-5
+                = image_tag 'studentkickoff.jpg', width:'100%', id:'d1'
 
-dt Process:
+    .row id="homeRow3"
+        .col-md-5
+            = image_tag 'dvd1.jpg', width:'100%'
+        .col-md-1
+        .col-md-6
+            h3 <strong>Volunteer</strong> your skills to make the strong, stronger
+            p By Contributing to a SEMADevelopment project, you help top-level university students and successful charities thrive in the 21st Century. Volunteering is easy, just <a href="#{page_path 'community'}">join the SEMADevelopment community</a> to answer student questions or register for our <a href="#{page_path 'events'}">next event</a> to collaborate with students directly.
 
-dt Step 1:
-dd Establish SEMA Partnerships with student and amateur mobile app developers at hackathons and universities across the country. Partners select the mobile app they wish to develop and the nonprofit they wish to benefit.
-dt Step 2:
-dd Invest in Partner Developers to promote the achievement of quality mobile apps. SEMADevelopment communicates regularly with its partners to provide the necessary resources for success. All SEMA Partners receive access to professional consulting from established mobile app developers, a one year marketing plan, graphic design assistance, and promotion of their app through SEMADevelopment social media outlets, website and Appolitionist blog.
-dt Step 3:
-dd Launch apps and raise money for 501(c)(3) organizations. Apps are launched to iTunes and Google Play from SEMADevelopment developer accounts. SEMADevelopment uses revenue generated from the sale of mobile apps to make monthly donations to partnering nonprofit organizations.
+    .row id="homeRow4"
+        .col-md-6
+            h3 <strong>Empower</strong> social good
+            p Our nonprofit community exists to fight cancer, end human trafficking, feed the hungry, educate children and more. SEMADevelopment exists to provide an innovative fundraising source by leveraging the two billion dollar mobile app industry. Launch a <a href="#{page_path 'faq'}">mobile app fundraising campaign</a> today or <a href="#{page_path 'donate'}">donate now</a> to keep the SEMADevelopment mission alive!
+        .col-md-1
+        .col-md-5
+            = image_tag 'dvd3.jpg', width:'100%'
+.container
+  section
+    == render 'shared/mailchimp'

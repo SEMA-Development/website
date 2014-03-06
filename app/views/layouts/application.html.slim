@@ -14,19 +14,11 @@ html lang="en"
     link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"
     link rel="icon" href="/favicon.ico" type="image/x-icon"
 
-    //JQuery Content Hover
-    =javascript_include_tag "conentHover"
-    javascript:
-      $('#d1').contenthover({
-        overlay_background:'#000',
-        overlay_opacity:0.8
-      });
-
   body
     .navbar.navbar-default.navbar-fixed-top
       .container
         .navbar-header
-          button.navbar-toggle data-toggle="collapse" data-taget=".navbar-collapse" type="button"
+          .button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"
             span.icon-bar
             span.icon-bar
             span.icon-bar
@@ -35,11 +27,12 @@ html lang="en"
           ul.nav.navbar-nav
             li= link_to "Apps", page_path('apps')
             li= link_to "Events", page_path('events')
+            li== link_to "Mission", page_path('mission')
             li= link_to "Donate", page_path('donate')
             li= link_to "Contact", page_path('contact')
+            li= link_to "Info", page_path('info')
             li= link_to "Blog", blog_path
-            li= link_to "Community", community_path
-            li= link_to "FAQ", page_path('faq')
+            
 
     .container
 
